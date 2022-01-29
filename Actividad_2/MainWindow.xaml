@@ -1,0 +1,36 @@
+﻿<Window x:Class="Actividad_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Actividad_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="FormularioIngreso">
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="234,357,0,0" VerticalAlignment="Top" Width="109" Height="33" Click="ButtonBorrar"/>
+        <Button Content="Confirmar" HorizontalAlignment="Left" Margin="419,357,0,0" VerticalAlignment="Top" Width="109" Height="33" Click="ButtonConfirmar"/>
+        <Label Content="Nombre del Medicamento :&#xD;&#xA;" HorizontalAlignment="Left" Margin="179,60,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="Tipo de Medicamento :&#xD;&#xA;" HorizontalAlignment="Left" Margin="202,104,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="Cantidad :&#xA;" HorizontalAlignment="Left" Margin="271,150,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="Nombre del Distribuidor : " HorizontalAlignment="Left" Margin="189,194,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="Sucursal :&#xD;&#xA;" HorizontalAlignment="Left" Margin="276,271,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="Pedido de Medicamentos" HorizontalAlignment="Left" Margin="288,23,0,0" VerticalAlignment="Top" Height="28" FontWeight="Bold" FontSize="16"/>
+        <TextBox x:Name="NombreMedicamento" HorizontalAlignment="Left" Margin="367,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="25"/>
+        <ComboBox x:Name="TipoMedicamento" HorizontalAlignment="Left" Margin="367,102,0,0" VerticalAlignment="Top" Width="256" SelectedIndex="0" Height="28">
+            <ComboBoxItem Content="Seleccione un tipo de medicamento"/>
+            <ComboBoxItem Content="Analgesico"/>
+            <ComboBoxItem Content="Analeptico"/>
+            <ComboBoxItem Content="Anestesico"/>
+            <ComboBoxItem Content="Antiacido"/>
+            <ComboBoxItem Content="Antidepresivo"/>
+            <ComboBoxItem Content="Antibiotico"/>
+        </ComboBox>
+        <TextBox x:Name="Cantidad" HorizontalAlignment="Left" Margin="367,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="25"/>
+        <RadioButton x:Name="DistribuidorCofarma" Content="Cofarma" HorizontalAlignment="Left" Margin="367,197,0,0" VerticalAlignment="Top" Width="108" Height="18" GroupName="distribuidor"/>
+        <RadioButton x:Name="DistribuidorEmpsephar" Content="Empsephar" HorizontalAlignment="Left" Margin="367,220,0,0" VerticalAlignment="Top" Width="108" Height="18" GroupName="distribuidor"/>
+        <RadioButton x:Name="DistribuidorCemefar" Content="Cemefar" HorizontalAlignment="Left" Margin="367,243,0,0" VerticalAlignment="Top" Width="108" Height="18" GroupName="distribuidor"/>
+        <CheckBox x:Name="SucursalPrincipal" Content="Principal" HorizontalAlignment="Left" Margin="367,276,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="SucursalSecundaria" Content="Secundaria" HorizontalAlignment="Left" Margin="367,302,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
